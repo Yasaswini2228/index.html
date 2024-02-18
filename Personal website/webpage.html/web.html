@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="name.jpg" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>FrontEnd Developer</p>
+                    <h1>Hi , I am <span>Yasaswini </span></br>Sai Surya Prabha</h1>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="mine1.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> 
+                            Recognized for outstanding adaptability, problem solving skills, 
+and a commitment to excellence. Collaborative team member 
+with a strong eagerness to learn, improve programming skills, 
+and contribute to team success. Eager to apply skills in a 
+dynamic and innovative environment to support the mission of 
+my Internship. 
+
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('technical skills')">Technical Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>FrontEnd development</span><br>Webpage development</li>
+                                <li><span>Logo designing</span><br>Designing logos</li>
+                                <li><span>Photo editor</span><br>Editing photos</li>
+                                <li><span>Content writing</span><br>Writing contents</li>
+                                <li><span>Analysing</span><br>Algorithms and Data Structure</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="technical skills">
+                            <ul>
+                                <li><span>Technical Languages:</span>C, C++, Python</li>
+                                <li><span>FrontEnd: </span>HTML, CSS, Javascript</li>
+                                <li><span>Office Productivity Tools:</span>MS Office, MS Word, MS Excel  </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 Dec - Current</span><br>Internship at Aviskar Solutions regarding Full Stack Web Development(Python with Django)</li>
+                                <li><span>2023 Aug - 2023 Dec</span><br>Chief of Single rotors at Center for drone technology</li> 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Bachelor of Technology | Computer Science and Engineering | SRM AP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="patient.png">
+                        <div class="layer">
+                            <h3>Patient Management</h3>
+                            <p>
+                                It enhances communication between healthcare providers, improves patient care coordination, and ensures seamless access to critical information for informed decision-making.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="portfolio.jpeg">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>
+                                A personal portfolio is a curated collection showcasing an individual's skills, achievements, and projects. It serves as a comprehensive snapshot of their professional journey, providing potential employers or clients with insights into their capabilities and style. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="student.jpeg">
+                        <div class="layer">
+                            <h3>Student Management</h3>
+                            <p>
+                                A student management system is a digital platform designed to efficiently organize and manage various aspects of educational institutions, including student enrollment, attendance tracking, and academic records.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="home.jpeg">
+                        <div class="layer">
+                            <h3>Find your dream home</h3>
+                            <p>
+                                Discover your ideal home with 'Find Your Dream Home' – our intuitive front-end web page simplifies real estate searches. Seamlessly browse listings, visualize properties, and make informed decisions with ease.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>n.y.s.suryaprabha@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>8247220252</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="Screenshot 2024-02-17 155441.png" download class="btn btn2">Download resume</a>
+                    </div>    
+                    <div class="contact-right"></div>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablinks.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
